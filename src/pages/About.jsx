@@ -1,8 +1,6 @@
-// returns text, this is the page...
-import React from 'react';
 
 
-function AboutPage() {
+function About() {
     return (
     <div>
         <h1>Welcome to the About Page!</h1>   

@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 function WomenClothing(){
     return(
@@ -9,5 +9,13 @@ function WomenClothing(){
     );
 }
 
-export default Checkout;
+export default WomenClothing;
+
+
+
+
+
+
+
+
 

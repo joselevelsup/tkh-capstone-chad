@@ -1,6 +1,6 @@
-import React from 'react';
 
-function KidsClothingPage(){
+
+function KidsClothing(){
     return(
         <div>
         <h1>Welcome to the KidsClothing!</h1>   
@@ -9,5 +9,5 @@ function KidsClothingPage(){
     );
 }
 
-export default Checkout;
+export default KidsClothing;
 

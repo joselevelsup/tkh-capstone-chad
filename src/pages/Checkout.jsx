@@ -1,6 +1,6 @@
-import React from 'react';
 
-function CheckoutPage(){
+
+function Checkout(){
     return(
         <div>
         <h1>Welcome to the Checkout Page!</h1>   

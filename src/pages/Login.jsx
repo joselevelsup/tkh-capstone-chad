@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 function Login(){
     return(
@@ -9,5 +9,5 @@ function Login(){
     );
 }
 
-export default Checkout;
+export default Login;
 

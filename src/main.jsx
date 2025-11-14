@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.jsx'
+
 
 
 // Import Routing Components from react-router-dom
@@ -25,16 +25,8 @@ import Checkout from './pages/Checkout.jsx';
 
 
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
-
-
+//Setup Routing
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
      <Router>
       <Routes>
@@ -51,6 +43,14 @@ function App() {
     </Router>
   );
 }
+
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)
+
 
 
 
