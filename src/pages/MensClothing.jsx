@@ -1,5 +1,8 @@
 import { faker } from '@faker-js/faker'
 
+
+
+
 export default function MensClothing() {
   const items = Array.from({ length: 6 }).map(() => ({
     id: faker.string.uuid(),
