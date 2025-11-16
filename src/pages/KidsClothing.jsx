@@ -1,7 +1,7 @@
 import { faker } from '@faker-js/faker'
 
 export default function KidsClothing() {
-  const items = Array.from({ length: 6 }).map(() => ({
+  const items = Array.from({ length: 15 }).map(() => ({
     id: faker.string.uuid(),
     name: faker.commerce.productName(),
     price: faker.commerce.price(),

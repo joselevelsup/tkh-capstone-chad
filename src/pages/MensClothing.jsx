@@ -5,6 +5,15 @@ import men3 from '../assets/mens/men3.avif'
 import men4 from '../assets/mens/men4.avif'
 import men5 from '../assets/mens/men5.avif'
 import men6 from '../assets/mens/men6.avif'
+import men7 from '../assets/mens/men7.avif'
+import men8 from '../assets/mens/men8.avif'
+import men9 from '../assets/mens/men9.avif'
+import men10 from '../assets/mens/men10.avif'
+import men11 from '../assets/mens/men11.avif'
+import men12 from '../assets/mens/men12.avif'
+import men13 from '../assets/mens/men13.avif'
+import men14 from '../assets/mens/men14.avif'
+import men15 from '../assets/mens/men15.avif'
 
 
 const mensItems = [
@@ -44,7 +53,63 @@ const mensItems = [
     price: 59.99,
     image: men6,
   },
+    {
+    id: 7,
+    name: 'Slim Fit Jeans',
+    price: 59.99,
+    image: men7,
+  },
+    {
+    id: 8,
+    name: 'Slim Fit Jeans',
+    price: 59.99,
+    image: men8,
+  },
+    {
+    id: 9,
+    name: 'Slim Fit Jeans',
+    price: 59.99,
+    image: men9,
+  },
+    {
+    id: 10,
+    name: 'Slim Fit Jeans',
+    price: 59.99,
+    image: men10,
+  },
+    {
+    id: 11,
+    name: 'Slim Fit Jeans',
+    price: 59.99,
+    image: men11,
+  },
+    {
+    id: 12,
+    name: 'Slim Fit Jeans',
+    price: 59.99,
+    image: men12,
+  },
+    {
+    id: 13,
+    name: 'Slim Fit Jeans',
+    price: 59.99,
+    image: men13,
+  },
+    {
+    id: 14,
+    name: 'Slim Fit Jeans',
+    price: 59.99,
+    image: men14,
+  },
+    {
+    id: 15,
+    name: 'Slim Fit Jeans',
+    price: 59.99,
+    image: men15,
+  },
+  
 ]
+
 
 
 
