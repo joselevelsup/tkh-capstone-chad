@@ -1,4 +1,4 @@
-//import { faker } from '@faker-js/faker'
+//srs/pages/assets/mens, importing images from assets folder
 import men1 from '../assets/mens/men1.avif'
 import men2 from '../assets/mens/men2.avif'
 import men3 from '../assets/mens/men3.avif'
@@ -16,6 +16,7 @@ import men14 from '../assets/mens/men14.avif'
 import men15 from '../assets/mens/men15.avif'
 
 
+// Manually adding datasets for men clothing, updated to 15 cards
 const mensItems = [
   {
     id: 1,
