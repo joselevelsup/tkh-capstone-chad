@@ -1,17 +1,11 @@
-
-function Checkout(){
-    return(
-        <div>
-        <h1>Welcome to the Checkout Page!</h1>   
-        <p>This is the checkout page for the Clothing Store.</p>
-        </div>
-    );
+export default function Checkout() {
+  return (
+    <div className="p-4 max-w-xl mx-auto">
+      <h1 className="text-2xl font-bold mb-4">Checkout</h1>
+      <p>Your cart is empty (demo placeholder).</p>
+    </div>
+  )
 }
-
-export default Checkout;
-
-
-
 
 
 

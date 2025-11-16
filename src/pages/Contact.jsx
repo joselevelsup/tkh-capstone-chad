@@ -1,13 +1,9 @@
-
-
-function Contact(){
-    return(
-        <div>
-        <h1>Welcome to the contact Page!</h1>   
-        <p>This is the contact page for Clothing Store.</p>
-        </div>
-    );
+export default function Contact() {
+  return (
+    <div className="p-4 max-w-lg mx-auto">
+      <h1 className="text-2xl font-bold mb-4">Contact Us</h1>
+      <p>Email: support@clothify.com</p>
+      <p className="mt-2">Feel free to reach out with any questions!</p>
+    </div>
+  )
 }
-
-export default Contact;
-

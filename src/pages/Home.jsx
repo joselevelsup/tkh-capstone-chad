@@ -1,22 +1,15 @@
-import React from 'react';
-
-function MyButton() {
+export default function Home() {
   return (
-    <button>I'm a button</button>
-  );
+    <div className="p-4 text-center">
+      <h1 className="text-3xl font-bold">Welcome to Clothify</h1>
+      <p className="mt-2">Simple demo ecommerce store built with React, Vite, Tailwind, DaisyUI & Supabase.</p>
+    </div>
+  )
 }
 
-function HomePage(){
-    return(
-        <div>
-        <h1>Welcome to the Home Page!</h1>   
-         <MyButton />
-        <p>This is the main page for our Capstone Clothing Store.</p>
-        </div>
-    );
-}
 
-export default Home;
+
+
 
 
 
