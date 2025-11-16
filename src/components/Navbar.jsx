@@ -21,13 +21,10 @@ export default function Navbar() {
         <Link to="/signup" className="btn btn-ghost btn-xs">
           Sign Up
         </Link>
-
-
-
-
-
-
-
+      </div>
+    </div>
+  )
+}
 
 
 
