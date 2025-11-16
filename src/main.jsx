@@ -1,5 +1,4 @@
 
-// main.jsx
 import { createClient } from '@supabase/supabase-js'
 export const supabase = createClient('https://pzqpjhdalynqqdtztgxj.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB6cXBqaGRhbHlucXFkdHp0Z3hqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjMyMzUwNjksImV4cCI6MjA3ODgxMTA2OX0.P5MORVHxQwRMKAZwoPpci-nvsMr6zYykWPPVtwLUE_Y')
 import { StrictMode } from 'react'
@@ -10,6 +9,11 @@ import {
   Routes,
   Route,
 } from 'react-router-dom'
+
+// Nav Bar setup
+import Navbar from './components/Navbar'
+
+
 
 //Import Pages
 import Home from './pages/Home'
@@ -23,7 +27,7 @@ import About from './pages/About'
 import Checkout from './pages/Checkout'
 
 
-//Setup Routing
+//Setup Routing for each page
 function App() {
   return (
     <Router>
