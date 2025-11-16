@@ -1,5 +1,4 @@
 
-
 function Checkout(){
     return(
         <div>
