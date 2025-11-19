@@ -1,23 +1,22 @@
 
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from 'react-router-dom'
+import { BrowserRouter as Router, Routes,Route,} from 'react-router-dom'
 import './index.css'
-
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import MensClothing from './pages/MensClothing'
 import WomenClothing from './pages/WomenClothing'
-import KidsClothing from './pages/KidsClothing'
+
+
+
+//import KidsClothing from './pages/KidsClothing'
 import Login from './pages/Login'
 import Signup from './pages/Signup'
 import Contact from './pages/Contact'
 import About from './pages/About'
 import Checkout from './pages/Checkout'
+
 
 function App() {
   return (
