@@ -4,6 +4,7 @@ import menHero from '../assets/home/men-hero.png'
 import womenHero from '../assets/home/women-hero.png'
 import kidsHero from '../assets/home/kids-hero.png'
 
+
 // Hero-style homepage with Men vs Women split and Kids section at the bottom
 export default function Home() {
   return (
@@ -38,6 +39,7 @@ export default function Home() {
           </div>
         </div>
 
+
         {/* Women's side */}
         <div className="relative overflow-hidden">
           <img
@@ -66,6 +68,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
 
       {/* Kids section at the bottom */}
       <section className="py-12 md:py-16 px-4 md:px-12 lg:px-20 bg-base-100">

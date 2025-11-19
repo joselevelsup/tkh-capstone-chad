@@ -1,24 +1,26 @@
 //srs/pages/assets/womens
-import women1 from '../assets/womens/women1.avif'
-import women2 from '../assets/womens/women2.avif'
-import women3 from '../assets/womens/women3.avif'
-import women4 from '../assets/womens/women4.avif'
-import women5 from '../assets/womens/women5.avif'
-import women6 from '../assets/womens/women6.avif'
-import women7 from '../assets/womens/women7.avif'
-import women8 from '../assets/womens/women8.avif'
-import women9 from '../assets/womens/women9.avif'
-import women10 from '../assets/womens/women10.avif'
-import women11 from '../assets/womens/women11.avif'
-import women12 from '../assets/womens/women12.avif'
-import women13 from '../assets/womens/women13.avif'
-import women14 from '../assets/womens/women14.avif'
-import women15 from '../assets/womens/women15.avif'
+// import women1 from '../assets/womens/women1.avif'
+// import women2 from '../assets/womens/women2.avif'
+// import women3 from '../assets/womens/women3.avif'
+// import women4 from '../assets/womens/women4.avif'
+// import women5 from '../assets/womens/women5.avif'
+// import women6 from '../assets/womens/women6.avif'
+// import women7 from '../assets/womens/women7.avif'
+// import women8 from '../assets/womens/women8.avif'
+// import women9 from '../assets/womens/women9.avif'
+// import women10 from '../assets/womens/women10.avif'
+// import women11 from '../assets/womens/women11.avif'
+// import women12 from '../assets/womens/women12.avif'
+// import women13 from '../assets/womens/women13.avif'
+// import women14 from '../assets/womens/women14.avif'
+// import women15 from '../assets/womens/women15.avif'
+
+import { useEffect, useState } from 'react'
+import { supabase } from '../lib/supabaseClient'
 
 
 
 // Manually adding datasets for women clothing, updated to 15 cards
-
 const womenItems = [
   { id: 1, name: 'Mini T-Shirt | Long Sleeve', price: 24.99, image: women1 },
   { id: 2, name: 'Soft Ribbed T-Shirt | Long Sleeve', price: 24.99, image: women2 },
@@ -36,9 +38,6 @@ const womenItems = [
   { id: 14, name: 'Smart Ankle Pants | Tall', price: 49.99, image: women14 },
   { id: 15, name: 'Ultra Stretch Leggings', price: 39.99, image: women15 },
 ]
-
-
-
 
 
 
@@ -60,6 +59,27 @@ export default function WomenClothing() {
     </div>
   )
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

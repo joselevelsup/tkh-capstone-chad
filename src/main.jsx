@@ -14,7 +14,6 @@ import {
 import Navbar from './components/Navbar'
 
 
-
 //Import Pages
 import Home from './pages/Home'
 import MensClothing from './pages/MensClothing'
@@ -52,12 +51,3 @@ createRoot(document.getElementById('root')).render(
     <App />
   </StrictMode>
   );
-
-
-
-
-
-
-
-
-

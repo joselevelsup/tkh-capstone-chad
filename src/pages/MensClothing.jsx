@@ -1,19 +1,20 @@
 //srs/pages/assets/mens, importing images from assets folder
-import men1 from '../assets/mens/men1.avif'
-import men2 from '../assets/mens/men2.avif'
-import men3 from '../assets/mens/men3.avif'
-import men4 from '../assets/mens/men4.avif'
-import men5 from '../assets/mens/men5.avif'
-import men6 from '../assets/mens/men6.avif'
-import men7 from '../assets/mens/men7.avif'
-import men8 from '../assets/mens/men8.avif'
-import men9 from '../assets/mens/men9.avif'
-import men10 from '../assets/mens/men10.avif'
-import men11 from '../assets/mens/men11.avif'
-import men12 from '../assets/mens/men12.avif'
-import men13 from '../assets/mens/men13.avif'
-import men14 from '../assets/mens/men14.avif'
-import men15 from '../assets/mens/men15.avif'
+// import men1 from '../assets/mens/men1.avif'
+// import men2 from '../assets/mens/men2.avif'
+// import men3 from '../assets/mens/men3.avif'
+// import men4 from '../assets/mens/men4.avif'
+// import men5 from '../assets/mens/men5.avif'
+// import men6 from '../assets/mens/men6.avif'
+// import men7 from '../assets/mens/men7.avif'
+// import men8 from '../assets/mens/men8.avif'
+// import men9 from '../assets/mens/men9.avif'
+// import men10 from '../assets/mens/men10.avif'
+// import men11 from '../assets/mens/men11.avif'
+// import men12 from '../assets/mens/men12.avif'
+// import men13 from '../assets/mens/men13.avif'
+// import men14 from '../assets/mens/men14.avif'
+// import men15 from '../assets/mens/men15.avif'
+
 
 
 // Manually adding datasets for men clothing, updated to 15 cards
@@ -114,11 +115,6 @@ const mensItems = [
 
 
 
-
-
-
-
-
 export default function MensClothing() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
@@ -137,3 +133,11 @@ export default function MensClothing() {
     </div>
   )
 }
+
+
+
+
+
+
+
+

@@ -1,26 +1,22 @@
 // src/pages/KidsClothing
-import kid1 from '../assets/kids/kid1.avif'
-import kid2 from '../assets/kids/kid2.avif'
-import kid3 from '../assets/kids/kid3.avif'
-import kid4 from '../assets/kids/kid4.avif'
-import kid5 from '../assets/kids/kid5.avif'
-import kid6 from '../assets/kids/kid6.avif'
-import kid7 from '../assets/kids/kid7.avif'
-import kid8 from '../assets/kids/kid8.avif'
-import kid9 from '../assets/kids/kid9.avif'
-import kid10 from '../assets/kids/kid10.avif'
-import kid11 from '../assets/kids/kid11.avif'
-import kid12 from '../assets/kids/kid12.avif'
-import kid13 from '../assets/kids/kid13.avif'
-import kid14 from '../assets/kids/kid14.avif'
-import kid15 from '../assets/kids/kid15.avif'
+// import kid1 from '../assets/kids/kid1.avif'
+// import kid2 from '../assets/kids/kid2.avif'
+// import kid3 from '../assets/kids/kid3.avif'
+// import kid4 from '../assets/kids/kid4.avif'
+// import kid5 from '../assets/kids/kid5.avif'
+// import kid6 from '../assets/kids/kid6.avif'
+// import kid7 from '../assets/kids/kid7.avif'
+// import kid8 from '../assets/kids/kid8.avif'
+// import kid9 from '../assets/kids/kid9.avif'
+// import kid10 from '../assets/kids/kid10.avif'
+// import kid11 from '../assets/kids/kid11.avif'
+// import kid12 from '../assets/kids/kid12.avif'
+// import kid13 from '../assets/kids/kid13.avif'
+// import kid14 from '../assets/kids/kid14.avif'
+// import kid15 from '../assets/kids/kid15.avif'
 
-
-
-
-
-
-
+import { useEffect, useState } from 'react'
+import { supabase } from '../lib/supabaseClient'
 
 
 // Manually adding datasets for Kids clothing, updated to 15 cards
@@ -28,20 +24,19 @@ const kidsItems = [
   { id: 1, name: 'PUFFTECH Washable Vest', price: 39.99, image: kid1 },
   { id: 2, name: 'PUFFTECH Washable Parka', price: 49.99, image: kid2 },
   { id: 3, name: 'Pocketable UV Protection Parka', price: 19.99, image: kid3 },
-    { id: 4, name: 'DRY Sweat Barrel Pants', price: 24.99, image: kid4 },
-    { id: 5, name: 'Warm Lined Pants', price: 29.99, image: kid5 },
-    { id: 6, name: 'Flannel Checked Shirt', price: 14.99, image: kid6 },
-    { id: 7, name: 'Souffle Yarn Cardigan', price: 29.99, image: kid7 },
-    { id: 8, name: 'Souffle Yarn Sweater', price: 24.99, image: kid8 },
-    { id: 9, name: 'Souffle Yarn Sweater', price: 24.99, image: kid9 },
-    { id: 10, name: 'Easy Stretch Denmin', price: 24.99, image: kid10 },
-    { id: 11, name: 'Wide Straight Jeans', price: 24.99, image: kid11 },
-    { id: 12, name: 'Pile Lined Sweatpants', price: 29.99, image: kid12 },
-    { id: 13, name: 'Red Christmas Sweater', price: 19.99, image: kid13 },
-    { id: 14, name: 'Dry Sweat Pants', price: 24.99, image: kid14 },
-    { id: 15, name: 'Stretch Easy Pants', price: 24.99, image: kid15 },
+  { id: 4, name: 'DRY Sweat Barrel Pants', price: 24.99, image: kid4 },
+  { id: 5, name: 'Warm Lined Pants', price: 29.99, image: kid5 },
+  { id: 6, name: 'Flannel Checked Shirt', price: 14.99, image: kid6 },
+  { id: 7, name: 'Souffle Yarn Cardigan', price: 29.99, image: kid7 },
+  { id: 8, name: 'Souffle Yarn Sweater', price: 24.99, image: kid8 },
+  { id: 9, name: 'Souffle Yarn Sweater', price: 24.99, image: kid9 },
+  { id: 10, name: 'Easy Stretch Denmin', price: 24.99, image: kid10 },
+  { id: 11, name: 'Wide Straight Jeans', price: 24.99, image: kid11 },
+  { id: 12, name: 'Pile Lined Sweatpants', price: 29.99, image: kid12 },
+  { id: 13, name: 'Red Christmas Sweater', price: 19.99, image: kid13 },
+  { id: 14, name: 'Dry Sweat Pants', price: 24.99, image: kid14 },
+  { id: 15, name: 'Stretch Easy Pants', price: 24.99, image: kid15 },
 ]
-
 
 export default function KidsClothing() {
   return (
@@ -61,3 +56,28 @@ export default function KidsClothing() {
     </div>
   )
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
