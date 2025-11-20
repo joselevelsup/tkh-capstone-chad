@@ -6,22 +6,36 @@ import women1Img from '../assets/women/women1.avif'
 import women2Img from '../assets/women/women2.avif'
 import women3Img from '../assets/women/women3.avif'
 import women4Img from '../assets/women/women4.avif'
-import women4Img from '../assets/women/women4.avif'
-import women4Img from '../assets/women/women4.avif'
-import women4Img from '../assets/women/women4.avif'
-import women4Img from '../assets/women/women4.avif'
-import women4Img from '../assets/women/women4.avif'
-import women4Img from '../assets/women/women4.avif'
-import women4Img from '../assets/women/women4.avif'
-import women4Img from '../assets/women/women4.avif'
-import women4Img from '../assets/women/women4.avif'
-import women4Img from '../assets/women/women4.avif'
+import women5Img from '../assets/women/women5.avif'
+import women6Img from '../assets/women/women6.avif'
+import women7Img from '../assets/women/women7.avif'
+import women8Img from '../assets/women/women8.avif'
+import women9Img from '../assets/women/women9.avif'
+import women10Img from '../assets/women/women10.avif'
+import women11Img from '../assets/women/women11.avif'
+import women12Img from '../assets/women/women12.avif'
+import women13Img from '../assets/women/women13.avif'
+import women14Img from '../assets/women/women14.avif'
+import women14Img from '../assets/women/women14.avif'
 
 const womenImageMap = {
   women1: women1Img,
   women2: women2Img,
   women3: women3Img,
   women4: women4Img,
+  women5: women5Img,
+  women6: women6Img,
+  women7: women7Img
+  women8: women8Img,
+  women9: women9Img,
+  women10: women10Img,
+  women11: women11Img,
+  women12: women12Img,
+  women13: women13Img,
+  women14: women14Img,
+  women15: women15Img,
+  
+
 }
 
 export default function WomenClothing() {
