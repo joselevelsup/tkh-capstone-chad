@@ -25,7 +25,7 @@ const womenImageMap = {
   women4: women4Img,
   women5: women5Img,
   women6: women6Img,
-  women7: women7Img
+  women7: women7Img,
   women8: women8Img,
   women9: women9Img,
   women10: women10Img,
