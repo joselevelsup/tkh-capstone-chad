@@ -1,4 +1,3 @@
-
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter as Router, Routes,Route,} from 'react-router-dom'
@@ -7,7 +6,7 @@ import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import MensClothing from './pages/MensClothing'
 import WomenClothing from './pages/WomenClothing'
-
+import KidsClothing from './pages/KidsClothing'
 
 
 //import KidsClothing from './pages/KidsClothing'
