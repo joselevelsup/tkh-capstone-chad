@@ -20,7 +20,6 @@ import kids14Img from '../assets/kids/kids14.avif'
 import kids15Img from '../assets/kids/kids15.avif'
 
 
-
 const kidsImageMap = {
   kids1: kids1Img,
   kids2: kids2Img,
@@ -88,10 +87,11 @@ export default function KidsClothing() {
           <div key={item.id} className="card bg-base-100 shadow-xl">
             <figure>
               {imgSrc ? (
-                <img src={imgSrc} alt={item.name} className="w-full h-64 object-cover" />
+                <img src={imgSrc} alt={item.name} className="max-h-full object-contain" />
               ) : (
-                <div className="w-full h-64 bg-base-200 flex items-center justify-center text-sm text-base-content/60">
-                  No image
+                <div className="w-full h-full bg-base-200 flex items-center justify-center text-sm text-base-content/60">
+  No image
+                  
                 </div>
               )}
             </figure>
