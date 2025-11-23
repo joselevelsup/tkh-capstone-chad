@@ -1,5 +1,7 @@
 
-import { useCart } from '../components/CartContext'
+// src/pages/Checkout.jsx
+import { useCart } from '../context/CartContext'
+
 
 export default function Checkout() {
   const { cartItems, totalItems, totalPrice, removeFromCart, clearCart } = useCart()
@@ -53,14 +55,22 @@ export default function Checkout() {
             {/* Summary card */}
             <aside className="border border-base-300 rounded-lg px-4 py-4 bg-base-100 shadow-sm space-y-3">
               <h2 className="font-semibold text-lg">Order Summary</h2>
+
               <div className="flex justify-between text-sm">
-                <span>Items ({totalItems})</span>
+                <span>Subtotal ({totalItems} items)</span>
                 <span>${totalPrice.toFixed(2)}</span>
               </div>
-              <div className="flex justify-between text-sm border-t border-base-300 pt-2 font-semibold">
-                <span>Total</span>
-                <span>${totalPrice.toFixed(2)}</span>
+
+              <div className="flex justify-between text-sm">
+                <span>Shipping</span>
+                <span className="text-success">Free</span>
               </div>
+
+              <div className="flex justify-between text-sm border-t border-base-300 pt-2">
+                <span className="font-semibold">Total (before tax)</span>
+                <span className="font-semibold">${totalPrice.toFixed(2)}</span>
+              </div>
+
               <button
                 className="btn btn-primary w-full mt-2"
                 onClick={handlePlaceOrder}
@@ -75,8 +85,6 @@ export default function Checkout() {
     </div>
   )
 }
-
-
 
 
 

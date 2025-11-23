@@ -1,9 +1,9 @@
+// src/context/CartContext.jsx
 import { createContext, useContext, useMemo, useState } from 'react'
 
 // Shape of a cart item:
 // { id, name, price, size, category, imageKey, quantity }
 
-// Provide a safe default so using the hook outside a provider won't crash
 const CartContext = createContext({
   cartItems: [],
   addToCart: () => {},
@@ -17,6 +17,8 @@ export function CartProvider({ children }) {
   const [cartItems, setCartItems] = useState([])
 
   const addToCart = (product) => {
+    console.log('addToCart called with:', product) // <-- TEMP debug log
+
     setCartItems((prev) => {
       const index = prev.findIndex((item) => item.id === product.id)
       if (index !== -1) {
@@ -44,6 +46,8 @@ export function CartProvider({ children }) {
       0
     )
 
+    console.log('Cart state changed:', { cartItems, totalItems, totalPrice }) // debug
+
     return {
       cartItems,
       addToCart,
@@ -57,7 +61,6 @@ export function CartProvider({ children }) {
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>
 }
 
-// No more throwing – just return the context value
 export function useCart() {
   return useContext(CartContext)
 }

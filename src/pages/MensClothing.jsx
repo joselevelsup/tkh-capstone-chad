@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from 'react'
 import { supabase } from '../lib/supabaseClient'
-import { useCart } from '../components/CartContext'
+import { useCart } from '../context/CartContext'
 
 
 // Map Supabase image keys (men1, men2, etc.) to real imported assets
@@ -45,6 +45,28 @@ export default function MensClothing() {
   const [items, setItems] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
+  // src/pages/MensClothing.jsx
+const { addToCart } = useCart()
+
+const handleAddToCart = (item) => {
+  addToCart({
+    id: item.id,
+    name: item.name,
+    price: Number(item.price),
+    size: item.size,
+    category: item.category,
+    imageKey: item.image_url,
+  })
+}
+
+// inside the map:
+<button
+  className="btn btn-primary btn-sm mt-2"
+  onClick={() => handleAddToCart(item)}
+>
+  Add to Cart
+</button>
+
 
   useEffect(() => {
     async function fetchMensClothing() {
