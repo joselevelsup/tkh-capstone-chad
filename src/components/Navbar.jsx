@@ -19,7 +19,7 @@ export default function Navbar() {
         <Link to="/about">About</Link>
         <Link to="/contact">Contact</Link>
 
-        {/* Checkout link with cart icon and counter */}
+        {/* Checkout link with cart icon + counter */}
         <Link to="/checkout" className="relative flex items-center gap-2">
           <span className="text-sm">Checkout</span>
           <span className="relative inline-flex items-center justify-center">

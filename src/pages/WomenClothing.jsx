@@ -44,6 +44,7 @@ export default function WomenClothing() {
   const [items, setItems] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
+  const { addToCart } = useCart()
 
   useEffect(() => {
     async function fetchWomenClothing() {
@@ -65,6 +66,17 @@ export default function WomenClothing() {
     fetchWomenClothing()
   }, [])
 
+  const handleAddToCart = (item) => {
+    addToCart({
+      id: item.id,
+      name: item.name,
+      price: Number(item.price),
+      size: item.size,
+      category: item.category,
+      imageKey: item.image_url,
+    })
+  }
+
   if (loading) {
     return <div className="p-4">Loading women&apos;s collection...</div>
   }
@@ -84,12 +96,12 @@ export default function WomenClothing() {
 
         return (
           <div key={item.id} className="card bg-base-100 shadow-xl">
-            <figure>
+            <figure className="bg-base-200 flex items-center justify-center h-64">
               {imgSrc ? (
                 <img src={imgSrc} alt={item.name} className="max-h-full object-contain" />
               ) : (
                 <div className="w-full h-full bg-base-200 flex items-center justify-center text-sm text-base-content/60">
-               No image
+                  No image
                 </div>
               )}
             </figure>
@@ -97,7 +109,12 @@ export default function WomenClothing() {
               <h2 className="card-title">{item.name}</h2>
               <p className="text-sm text-base-content/70">Size: {item.size || 'One size'}</p>
               <p className="font-semibold mt-1">${item.price}</p>
-              <button className="btn btn-primary btn-sm mt-2">Add to Cart</button>
+              <button
+                className="btn btn-primary btn-sm mt-2"
+                onClick={() => handleAddToCart(item)}
+              >
+                Add to Cart
+              </button>
             </div>
           </div>
         )
@@ -105,7 +122,6 @@ export default function WomenClothing() {
     </div>
   )
 }
-
 
 
 

@@ -45,6 +45,8 @@ export default function MensClothing() {
   const [items, setItems] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
+
+  
   // src/pages/MensClothing.jsx
 const { addToCart } = useCart()
 
