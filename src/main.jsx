@@ -7,6 +7,7 @@ import Home from './pages/Home'
 import MensClothing from './pages/MensClothing'
 import WomenClothing from './pages/WomenClothing'
 import KidsClothing from './pages/KidsClothing'
+import { CartProvider } from './components/CartContext'
 
 
 //import KidsClothing from './pages/KidsClothing'

@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react'
 import { supabase } from '../lib/supabaseClient'
+import { useCart } from '../components/CartContext'
+
 
 // Map Supabase image keys (women1, women2, etc.) to real imported assets
 import women1Img from '../assets/womens/women1.avif'
